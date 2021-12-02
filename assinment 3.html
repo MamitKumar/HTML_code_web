@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working On Project</title>
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="Assinment 3rd css.css">
+<style>
+
+    #logo img{
+        border-radius: 360px;
+        height: 40px;
+        margin:012px 15px ;
+        display: flex;
+        position: relative;
+    }
+
+    #navbar{
+        display: flex;
+        position: relative;
+        align-items: center;
+    }
+    #navbar h2{
+        text-align: center;
+    }
+    #navbar::before{
+        background-color:black;
+        position: absolute;
+        height: 100%;
+        width: 100% ;
+        z-index: -1;
+        opacity:0.9;
+    }
+    #navbar ul{
+        display:  flex;
+    }
+    #navbar ul li{
+        list-style: none;
+        font-size: 1.3rem;
+    }
+    #navbar ul li a{
+        text-decoration: none;
+        display: block;
+        padding: 3px 22px;
+        border-radius: 22px;
+        color: rgb(17, 12, 12);
+    }
+
+    /* Home Section */
+    #home{
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+    }
+    #home::before{
+        content:" ";
+        background:url(https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80) no-repeat center center/cover ;
+        position: absolute;
+        height: 900px;
+        width: 100% ;
+        z-index: -7;
+        opacity: 0.9;
+    }
+    #home h1{
+        font-size: 4rem;
+        font-family:fantasy;
+        text-align: center;
+    }
+    #home p{
+        font-size: 1.3rem;
+        margin-top: 12px;
+        color: rgb(0, 0, 0);
+    }
+
+    #services .box img{
+        height: 400px;
+        width: 340px;
+        border: solid red;
+        border-radius: 16px;
+        align-items: center;
+    }
+    #services .box p{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    #btn{
+        color: rgb(0, 0, 0);
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        background:none;
+    }
+    #btn:hover{
+        background-color: rgb(246, 246, 246);
+        color: black;
+        cursor: pointer;
+    }
+    #icon{
+        margin-left: 480px;
+        padding: 15px;
+    }
+
+    .clints img{
+        border-radius: 8px;
+        height: 167px;
+    }
+    .clints #theimg{
+        width: 200px;
+    }
+    .clints button{
+        background:none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .class_form input{
+        border-radius: 6px;
+        padding: 6px;
+        font-size: 1rem;
+        font-family: monospace;
+    }
+    .class_form button {
+        padding: 9px;
+        width: 90px;
+        align-items: center;
+        border-radius: 8px;
+        box-shadow: 3px 3px 5px rgb(10, 10, 10);
+    }
+    .class_form label{
+        color: rgb(5, 5, 5);
+    }
+    footer{
+        background:black;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 4px;
+    }
+    #oo{
+        font-size: 2em;
+       color: black;
+    }
+</style>
+</head>
+
+<body>
+<nav id="navbar">
+    <div id="logo">
+        <p><img src="https://thumbs.dreamstime.com/b/people-successfull-good-progress-logo-vector-icon-template-design-176999698.jpg" alt="Sorry Not Found Image "></p>
+<!--        <h2>Progressive</h2>-->
+    </div>
+
+    <ul>
+        <li class="item" id="oo"><a>Progressive</a></li>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">Services</a></li>
+        <li class="item"><a href="#">About</a></li>
+        <li class="item"><a href="#">Elements </a></li>
+        <li class="item"><a href="#">More</a></li>
+        <li class="item" style="color: red"><a href="#">BUY!</a></li>
+
+    </ul>
+    <div id="icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+    </svg>
+    |
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+    </svg>
+    </div>
+</nav>
+<section id="home">
+    <h1 id="phone">The Food Store</h1>
+    <p>Welcome in 5⭐️<br>
+        whole World In Num.1 Hotel Desi Food<br>
+        This Hotel Created By Indian Family And Famous In Whole World<br>
+        All Country 10 Star Rating<br>
+        Pure Desi Hotel In World Enter First time Coffee Free <br>
+        Hotel Owner:
+
+        Welcome in 5⭐️
+        whole World In Num.1 Hotel Desi Food
+        This Hotel Created By Indian Family And Famous In Whole World
+        All Country 10 Star Rating
+        Pure Desi Hotel In World Enter First time Coffee Free
+        Hotel Owner:
+    <p>🧑🏻‍🍳 Mamit_Sheoran</p>
+    <button id="btn">Order Now</button>
+</section>
+
+</body>
+
+</html>
